@@ -27,7 +27,7 @@ A Next.js application for staking SOL tokens and earning yield on the Solana blo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/solana-staking/solana-staking-ui.git
+   git clone https://github.com/satyawaniaman/solana-staking-dapp
    cd solana-staking-ui
    ```
 
