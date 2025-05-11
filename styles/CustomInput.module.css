@@ -1,0 +1,100 @@
+.customInputContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background-color: rgba(15, 20, 30, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.customInputContainer:focus-within {
+  border-color: rgba(20, 241, 149, 0.3);
+  box-shadow: 0 0 0 2px rgba(20, 241, 149, 0.1);
+}
+
+.customInputLabels {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.customInputAmounts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.customInputAmountLabel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+}
+
+.customInputBalance {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #c1c1d1;
+}
+
+.customInput {
+  height: 33px;
+  font-size: 22px;
+  line-height: 30px;
+  margin-left: 12px;
+
+  color: #ffffff;
+  background-color: transparent;
+  width: 100%;
+}
+
+.customInput::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.customInputAmount {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.customInputCenterIcon {
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    rgba(22, 27, 41, 0.9) 0%,
+    rgba(15, 20, 30, 0.9) 100%
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #14f195;
+}
+
+@media (max-width: 576px) {
+  .customInputContainer {
+    padding: 16px;
+  }
+
+  .customInput {
+    font-size: 20px;
+  }
+}
